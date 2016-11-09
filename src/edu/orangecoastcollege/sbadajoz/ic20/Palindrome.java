@@ -16,7 +16,7 @@ public class Palindrome {
             if(check.charAt(i) !=check.charAt(check.length() - i - 1)) return false;
         }
         return true;
-    }
+    }   
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
