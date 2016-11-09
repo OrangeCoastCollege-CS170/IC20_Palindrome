@@ -26,7 +26,7 @@ public class Palindrome {
         while(active) {
             System.out.print("Please enter word or phrase to see if it's a palindrome (type quit to end the program): ");
             userInput = input.nextLine();
-            if(isPalindrome(userInput.toLowerCase())) System.out.println(userInput + " is a a palindrome!");
+            if(isPalindrome(userInput.toLowerCase().trim().replaceAll(" ", ""))) System.out.println(userInput + " is a a palindrome!");
             else System.out.println(userInput + " is not a palindrome");
             active = !userInput.toLowerCase().equals("quit");
         }
